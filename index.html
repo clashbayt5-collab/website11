@@ -107,9 +107,10 @@
 
   /* Шапка */
   .header {
+    /* Шапка всегда наверху и непрозрачная: при прокрутке за ней ничего не видно */
     position: fixed; inset: 0 0 auto; z-index: 50;
-    background: rgba(28,29,31,.92);
-    backdrop-filter: blur(6px);
+    background: var(--bg);
+    padding-top: env(safe-area-inset-top);
     border-bottom: 1px solid var(--line);
   }
   .header .wrap { display: flex; align-items: center; justify-content: space-between; height: 76px; gap: 24px; }
