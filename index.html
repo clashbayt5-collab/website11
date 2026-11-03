@@ -396,9 +396,14 @@
     .map { min-height: 320px; }
     .footer { padding-bottom: 96px; }
     .call-fab {
-      display: flex; position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 40;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4px;
+      position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 40;
       box-shadow: 0 8px 24px rgba(0,0,0,.5);
     }
+    .call-fab .btn { width: 100%; padding: 20px 8px; gap: 8px; }
+    .call-fab .fab-tg { background: #fff; color: #111; }
+    .call-fab .fab-tg:hover { background: #e6e6e6; }
+    .call-fab .fab-tg svg { width: 20px; height: 20px; fill: currentColor; flex: none; }
     .toast { bottom: 96px; width: calc(100% - 32px); }
   }
 </style>
@@ -679,7 +684,13 @@
   </div>
 </footer>
 
-<a href="tel:+78462006666" class="btn call-fab">Позвонить</a>
+<div class="call-fab">
+  <a href="tel:+78462006666" class="btn">Позвонить</a>
+  <a href="https://t.me/oldmiA" class="btn fab-tg" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.5 13.2 1.8 11.7c-1-.3-1-1 .2-1.5L20.5 3.1c.9-.3 1.6.2 1.4 1.2z"/></svg>
+    Telegram
+  </a>
+</div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <div class="modal" id="tgModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
