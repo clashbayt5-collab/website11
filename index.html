@@ -3,34 +3,34 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Замена масла и ремонт японских авто в Самаре за 1 день — автосервис «Гараж 66»</title>
-<meta name="description" content="Замена масла в Самаре от 900 ₽ за 30 минут, без очереди. Автосервис «Гараж 66»: диагностика за 15 минут, ремонт ходовой и двигателя японских авто. Гарантия 2 года. Ул. Партизанская, 66. ☎ 8-913-160-75-92">
-<meta property="og:title" content="Гараж 66 — ремонт японских авто в Самаре за 1 день">
-<meta property="og:description" content="Замена масла от 900 ₽, диагностика за 15 минут, гарантия 2 года. Ежедневно 8:00–21:00.">
-<meta property="og:image" content="https://images.unsplash.com/photo-1698796783361-c92fe82d9b79?w=1200&q=70">
+<title>Техосмотр от 999 ₽, ОСАГО и ремонт двигателей в Талнахе — «Фаворит», Норильск</title>
+<meta name="description" content="Пункт техосмотра и автосервис «Фаворит» в Талнахе (Норильск): техосмотр от 999 ₽, ОСАГО, ремонт двигателей. Ежедневно 10:00–20:00. ГСК «Октябрь», 3-й ряд, с65К. ☎ +7 (928) 922-92-19">
+<meta property="og:title" content="«Фаворит» — техосмотр и автосервис в Талнахе">
+<meta property="og:description" content="Техосмотр от 999 ₽, ОСАГО, ремонт двигателей. Без выходных, 10:00–20:00. ГСК «Октябрь», Талнах, Норильск.">
+<meta property="og:image" content="img/tehosmotr-night.jpg">
 <meta name="theme-color" content="#1c1d1f">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "AutoRepair",
-  "name": "Гараж 66",
-  "description": "Ремонт японских автомобилей в Самаре за 1 день: замена масла, диагностика, ходовая, тормоза, ТО, двигатель.",
-  "telephone": "+7-913-160-75-92",
-  "priceRange": "от 800 ₽",
+  "name": "Фаворит",
+  "description": "Пункт техосмотра и автосервис в Талнахе: техосмотр, ОСАГО, ремонт двигателей.",
+  "telephone": "+7-928-922-92-19",
+  "priceRange": "от 999 ₽",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "ул. Партизанская, 66",
-    "addressLocality": "Самара",
+    "streetAddress": "ГСК «Октябрь», 3-й ряд, с65К, микрорайон 4Р, район Талнах",
+    "addressLocality": "Норильск",
     "addressCountry": "RU"
   },
+  "geo": { "@type": "GeoCoordinates", "latitude": 69.492505, "longitude": 88.367929 },
   "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "21:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "09:00", "closes": "19:00" }
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "10:00", "closes": "20:00" }
   ],
   "makesOffer": [
-    { "@type": "Offer", "name": "Замена масла", "price": "900", "priceCurrency": "RUB" },
-    { "@type": "Offer", "name": "Компьютерная диагностика", "price": "1200", "priceCurrency": "RUB" }
-  ]
+    { "@type": "Offer", "name": "Техосмотр", "price": "999", "priceCurrency": "RUB" }
+  ],
+  "sameAs": ["https://yandex.ru/maps/org/favorit/169340504724/"]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -154,7 +154,7 @@
     min-height: 100vh;
     display: flex; align-items: flex-end;
     padding: calc(160px + env(safe-area-inset-top)) 0 96px;
-    background: #111 url("https://images.unsplash.com/photo-1698796783361-c92fe82d9b79?w=1920&q=70") center/cover no-repeat;
+    background: #111 url("img/tehosmotr-night.jpg") center/cover no-repeat;
   }
   .hero::before {
     content: ""; position: absolute; inset: 0;
@@ -185,6 +185,8 @@
   .service p { color: var(--muted); font-size: 16px; flex: 1; }
   .service-foot { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--line); }
   .price { font: 700 36px/1 "Oswald", sans-serif; color: var(--accent); white-space: nowrap; }
+  .price--ask { font-size: 24px; }
+  .services-grid--4 { grid-template-columns: repeat(2, 1fr); }
   .price small { font-size: 18px; color: var(--muted); font-weight: 500; margin-right: 6px; }
   .service-link {
     font: 600 14px/1 "Oswald", sans-serif; letter-spacing: .12em; text-transform: uppercase;
@@ -208,6 +210,7 @@
   .stat-num small { font-size: .42em; margin-left: 6px; color: var(--text); }
   .stat-text { color: var(--muted); margin-top: 12px; font-size: 16px; }
   .gallery { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-auto-rows: 340px; gap: 4px; margin-top: 80px; }
+  .gallery--2 { grid-template-columns: 1fr 1fr; }
   .gallery figure { position: relative; overflow: hidden; background: #111; }
   .gallery img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(.3) contrast(1.1); transition: transform .5s, filter .5s; }
   .gallery figure:hover img { transform: scale(1.04); filter: none; }
@@ -220,6 +223,8 @@
 
   /* Отзывы */
   .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .reviews-empty { background: var(--bg-2); border-left: 4px solid var(--accent); padding: 48px; max-width: 820px; }
+  .reviews-empty p { font-size: 19px; color: #d3d4d8; margin-bottom: 32px; }
   .review { background: var(--bg-2); border-left: 4px solid var(--accent); padding: 40px 36px; display: flex; flex-direction: column; }
   .stars { color: var(--accent); font-size: 20px; letter-spacing: 4px; margin-bottom: 20px; }
   .review blockquote { font-size: 17px; flex: 1; }
@@ -228,7 +233,7 @@
   .review span { color: var(--muted); font-size: 15px; }
 
   /* Форма */
-  .booking { position: relative; background: #111 url("https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1920&q=65") center/cover no-repeat; }
+  .booking { position: relative; background: #111 url("img/boks.jpg") center/cover no-repeat; }
   .booking::before { content: ""; position: absolute; inset: 0; background: rgba(20,20,22,.9); }
   .booking .wrap { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
   .booking-info p { color: #c9cace; font-size: 18px; margin-bottom: 32px; }
@@ -313,7 +318,7 @@
     .modal-box h3 { font-size: 26px; }
   }
   .success-actions .btn, .success-actions .btn-ghost { width: 100%; }
-  .footer-tg { display: inline-block; margin-top: 8px; color: var(--muted); font-size: 17px; transition: color .2s; }
+  .footer-tg { display: block; width: fit-content; margin-top: 8px; color: var(--muted); font-size: 17px; transition: color .2s; }
   .footer-tg:hover { color: var(--accent); }
   .form.sent form { display: none; }
   .form.sent .form-success { display: block; }
@@ -393,6 +398,8 @@
     .stat + .stat { padding-left: 16px; }
     .stat:nth-child(3) { padding-left: 0; }
     .review { padding: 32px 24px; }
+    .reviews-empty { padding: 28px 20px; }
+    .reviews-empty p { font-size: 17px; }
     .gallery { grid-template-columns: 1fr; grid-auto-rows: 240px; margin-top: 48px; }
     .form { padding: 28px 20px; }
     .booking-call a { font-size: 30px; }
@@ -405,7 +412,7 @@
 
 <header class="header">
   <div class="wrap">
-    <a href="#top" class="logo" aria-label="Гараж 66 — наверх">Гараж<span>66</span></a>
+    <a href="#top" class="logo" aria-label="Фаворит — наверх">Фаворит<span>ТО</span></a>
     <nav class="nav" id="nav">
       <a href="#services">Услуги и цены</a>
       <a href="#why">О нас</a>
@@ -422,7 +429,7 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.5 13.2 1.8 11.7c-1-.3-1-1 .2-1.5L20.5 3.1c.9-.3 1.6.2 1.4 1.2z"/></svg>
         <span>Telegram</span>
       </a>
-      <a href="tel:+79131607592" class="header-phone">8-913-160-75-92</a>
+      <a href="tel:+79289229219" class="header-phone">+7 (928) 922-92-19</a>
     </div>
     <button type="button" class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span></button>
   </div>
@@ -432,17 +439,17 @@
   <!-- Первый экран -->
   <section class="hero">
     <div class="wrap">
-      <span class="label reveal">Автосервис · Самара</span>
-      <h1 class="reveal">Ремонт японских авто в&nbsp;Самаре <em>за&nbsp;1&nbsp;день</em></h1>
-      <p class="reveal reveal-d1">12 лет чиним Toyota, Nissan, Honda, Mazda, Mitsubishi и Subaru. Оригинальные запчасти и масла, гарантия на работу — 2 года.</p>
+      <span class="label reveal">Пункт техосмотра и автосервис · Талнах</span>
+      <h1 class="reveal">Техосмотр и ремонт авто в&nbsp;Талнахе <em>без&nbsp;выходных</em></h1>
+      <p class="reveal reveal-d1">«Фаворит» в ГСК «Октябрь»: техосмотр от 999 ₽, помощь с ОСАГО и ремонт двигателей. Работаем каждый день с 10:00 до 20:00.</p>
       <div class="hero-actions reveal reveal-d2">
         <a href="#booking" class="btn">Записаться</a>
-        <a href="tel:+79131607592" class="btn-ghost">Позвонить</a>
+        <a href="tel:+79289229219" class="btn-ghost">Позвонить</a>
       </div>
       <div class="hero-facts reveal reveal-d2">
-        <div><b>Без очереди</b>запись на ближайший час</div>
-        <div><b>Без выходных</b>пн–пт 8–21, сб–вс 9–19</div>
-        <div><b>Цена до работ</b>смета не меняется</div>
+        <div><b>Техосмотр от 999 ₽</b>пункт техосмотра на месте</div>
+        <div><b>Без выходных</b>ежедневно 10:00 – 20:00</div>
+        <div><b>ГСК «Октябрь»</b>3-й ряд, с65К, Талнах</div>
       </div>
     </div>
   </section>
@@ -452,99 +459,80 @@
     <div class="wrap">
       <span class="label reveal">Прайс</span>
       <h2 class="reveal">Услуги и <span>цены</span></h2>
-      <div class="services-grid">
+      <div class="services-grid services-grid--4">
         <article class="service reveal">
           <div class="service-num">01</div>
-          <h3>Замена масла</h3>
-          <p>Масло в двигателе и фильтр за 30 минут. Старое масло утилизируем сами, ваше масло — без доплаты.</p>
+          <h3>Техосмотр</h3>
+          <p>Пункт техосмотра «Фаворит» прямо в боксе. Приезжайте — проверим машину и подскажем, что нужно для прохождения.</p>
           <div class="service-foot">
-            <div class="price"><small>от</small>900 ₽</div>
-            <button type="button" class="service-link" data-service="Замена масла">Записаться</button>
+            <div class="price"><small>от</small>999 ₽</div>
+            <button type="button" class="service-link" data-service="Техосмотр">Записаться</button>
           </div>
         </article>
         <article class="service reveal reveal-d1">
           <div class="service-num">02</div>
-          <h3>Компьютерная диагностика</h3>
-          <p>Считываем ошибки всех блоков дилерским сканером. 15 минут — и вы знаете, что с машиной.</p>
+          <h3>ОСАГО</h3>
+          <p>Поможем оформить полис ОСАГО на месте, вместе с техосмотром. Стоимость полиса зависит от машины и водителя.</p>
           <div class="service-foot">
-            <div class="price"><small>от</small>1 200 ₽</div>
-            <button type="button" class="service-link" data-service="Компьютерная диагностика">Записаться</button>
-          </div>
-        </article>
-        <article class="service reveal reveal-d2">
-          <div class="service-num">03</div>
-          <h3>Ремонт ходовой</h3>
-          <p>Стуки, люфты, увод в сторону. Меняем рычаги, сайлентблоки, шаровые, амортизаторы.</p>
-          <div class="service-foot">
-            <div class="price"><small>от</small>1 500 ₽</div>
-            <button type="button" class="service-link" data-service="Ремонт ходовой">Записаться</button>
+            <div class="price price--ask">По запросу</div>
+            <button type="button" class="service-link" data-service="ОСАГО">Записаться</button>
           </div>
         </article>
         <article class="service reveal">
-          <div class="service-num">04</div>
-          <h3>Тормозная система</h3>
-          <p>Колодки, диски, суппорты, замена тормозной жидкости. Проверка на стенде — бесплатно.</p>
+          <div class="service-num">03</div>
+          <h3>Ремонт двигателей</h3>
+          <p>Ремонтируем двигатели: от устранения неисправностей до серьёзного ремонта. Стоимость — после осмотра.</p>
           <div class="service-foot">
-            <div class="price"><small>от</small>800 ₽</div>
-            <button type="button" class="service-link" data-service="Тормозная система">Записаться</button>
-          </div>
-        </article>
-        <article class="service reveal reveal-d1">
-          <div class="service-num">05</div>
-          <h3>ТО по регламенту</h3>
-          <p>Плановое обслуживание по карте производителя. Сохраняем отметки в сервисной книжке.</p>
-          <div class="service-foot">
-            <div class="price"><small>от</small>3 500 ₽</div>
-            <button type="button" class="service-link" data-service="ТО по регламенту">Записаться</button>
-          </div>
-        </article>
-        <article class="service reveal reveal-d2">
-          <div class="service-num">06</div>
-          <h3>Ремонт двигателя</h3>
-          <p>От замены ремня ГРМ до капремонта. Расход масла, троение, потеря мощности.</p>
-          <div class="service-foot">
-            <div class="price"><small>от</small>4 000 ₽</div>
+            <div class="price price--ask">После осмотра</div>
             <button type="button" class="service-link" data-service="Ремонт двигателя">Записаться</button>
           </div>
         </article>
+        <article class="service reveal reveal-d1">
+          <div class="service-num">04</div>
+          <h3>Автосервис</h3>
+          <p>Автотехцентр в гаражном кооперативе: расскажите, что случилось с машиной, — подскажем, чем поможем и сколько это стоит.</p>
+          <div class="service-foot">
+            <div class="price price--ask">По телефону</div>
+            <button type="button" class="service-link" data-service="Ремонт авто">Записаться</button>
+          </div>
+        </article>
       </div>
-      <p class="services-note reveal">Точную стоимость назовём после осмотра — до начала работ. Цены указаны за работу без учёта запчастей.</p>
+      <p class="services-note reveal">Точную стоимость ремонта назовём до начала работ. Позвоните или оставьте заявку — ответим на вопросы.</p>
     </div>
   </section>
 
-  <!-- Почему мы -->
+  <!-- О нас -->
   <section class="section why" id="why">
     <div class="wrap">
       <div class="why-top">
         <div class="reveal">
           <span class="label">О нас</span>
-          <h2>Почему <span>мы</span></h2>
-          <p>Мы не берёмся за всё подряд — только японские машины. Поэтому знаем их болячки наизусть, держим нужные запчасти на складе и отдаём машину в тот же день. Вы видите цех через стекло и можете смотреть, как работает мастер.</p>
+          <h2>Почему <span>«Фаворит»</span></h2>
+          <p>Пункт техосмотра и автосервис в одном месте: можно пройти техосмотр, оформить ОСАГО и заняться ремонтом, не катаясь по городу. Мы в ГСК «Октябрь» в Талнахе, рядом с остановкой «Дудинская улица», и работаем каждый день, включая выходные.</p>
         </div>
-        <div class="why-photo reveal reveal-d1" style="background-image:url('https://images.unsplash.com/photo-1791419542289-693087bd1044?w=1000&q=70')" role="img" aria-label="Автомобиль с открытым капотом на подъёмнике"></div>
+        <div class="why-photo reveal reveal-d1" style="background-image:url('img/vezd.jpg')" role="img" aria-label="Въезд в бокс «Фаворит» в ГСК «Октябрь»"></div>
       </div>
       <div class="stats">
         <div class="stat reveal">
-          <div class="stat-num"><span class="count" data-to="12">0</span></div>
-          <div class="stat-text">лет работаем в Самаре</div>
+          <div class="stat-num"><span class="count" data-to="999">0</span><small>₽</small></div>
+          <div class="stat-text">стоимость техосмотра — от</div>
         </div>
         <div class="stat reveal reveal-d1">
-          <div class="stat-num"><span class="count" data-to="8000">0</span></div>
-          <div class="stat-text">машин отремонтировали</div>
+          <div class="stat-num"><span class="count" data-to="7">0</span><small>дней</small></div>
+          <div class="stat-text">в неделю, без выходных</div>
         </div>
         <div class="stat reveal reveal-d2">
-          <div class="stat-num"><span class="count" data-to="2">0</span><small>года</small></div>
-          <div class="stat-text">гарантия на работы</div>
+          <div class="stat-num"><span class="count" data-to="20">0</span><small>:00</small></div>
+          <div class="stat-text">работаем каждый день до</div>
         </div>
         <div class="stat reveal reveal-d2">
-          <div class="stat-num"><span class="count" data-to="15">0</span><small>мин</small></div>
-          <div class="stat-text">занимает диагностика</div>
+          <div class="stat-num"><span class="count" data-to="340">0</span><small>м</small></div>
+          <div class="stat-text">от остановки «Дудинская улица»</div>
         </div>
       </div>
-      <div class="gallery">
-        <figure class="reveal"><img src="https://images.unsplash.com/photo-1723099971299-3789db53604c?w=900&q=70" alt="Автомобиль на подъёмнике в цехе" loading="lazy"><figcaption>6 подъёмников</figcaption></figure>
-        <figure class="reveal reveal-d1"><img src="https://images.unsplash.com/photo-1786198984387-b63cdf520602?w=900&q=70" alt="Машина на двухстоечном подъёмнике во время ремонта" loading="lazy"><figcaption>Ремонт ходовой</figcaption></figure>
-        <figure class="reveal reveal-d2"><img src="https://images.unsplash.com/photo-1792793176006-a7b35e29c7e1?w=900&q=70" alt="Цех автосервиса с подъёмниками" loading="lazy"><figcaption>Наш цех</figcaption></figure>
+      <div class="gallery gallery--2">
+        <figure class="reveal"><img src="img/boks.jpg" alt="Бокс автосервиса «Фаворит» с открытыми воротами" loading="lazy"><figcaption>Наш бокс</figcaption></figure>
+        <figure class="reveal reveal-d1"><img src="img/talnah.jpg" alt="Вид на ГСК «Октябрь» и микрорайон 4Р в Талнахе" loading="lazy"><figcaption>ГСК «Октябрь», Талнах</figcaption></figure>
       </div>
     </div>
   </section>
@@ -554,22 +542,10 @@
     <div class="wrap">
       <span class="label reveal">Отзывы</span>
       <h2 class="reveal">Что говорят <span>клиенты</span></h2>
-      <div class="reviews-grid">
-        <article class="review reveal">
-          <div class="stars" aria-label="5 из 5">★★★★★</div>
-          <blockquote>Приехал утром со стуком в подвеске, к обеду забрал. Показали старые сайлентблоки, объяснили, что ещё походит, а что скоро менять. Без навязывания.</blockquote>
-          <footer><b>Дмитрий</b><span>Toyota Camry 2016</span></footer>
-        </article>
-        <article class="review reveal reveal-d1">
-          <div class="stars" aria-label="5 из 5">★★★★★</div>
-          <blockquote>Меняю масло только здесь третий год. Записываюсь по телефону, приезжаю — сразу на подъёмник. Полчаса, и я уже еду. Цена всегда та, что назвали.</blockquote>
-          <footer><b>Сергей</b><span>Nissan X-Trail 2019</span></footer>
-        </article>
-        <article class="review reveal reveal-d2">
-          <div class="stars" aria-label="5 из 5">★★★★★</div>
-          <blockquote>В двух сервисах не смогли найти, почему горит Check Engine. Здесь за 15 минут нашли датчик, поменяли в тот же день. Теперь вся семья ездит сюда.</blockquote>
-          <footer><b>Алексей</b><span>Mazda CX-5 2018</span></footer>
-        </article>
+      <div class="reviews-empty reveal">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <p>На Яндекс Картах у «Фаворита» пока нет отзывов. Были у нас? Расскажите, как всё прошло, — ваш отзыв поможет другим водителям Талнаха.</p>
+        <a href="https://yandex.ru/maps/org/favorit/169340504724/reviews/" class="btn" target="_blank" rel="noopener">Оставить отзыв на Яндекс Картах</a>
       </div>
     </div>
   </section>
@@ -579,15 +555,15 @@
     <div class="wrap">
       <div class="booking-info reveal">
         <span class="label">Запись</span>
-        <h2>Запишитесь <span>на&nbsp;ремонт</span></h2>
-        <p>Оставьте заявку — мастер перезвонит в течение 10 минут, уточнит проблему и подберёт удобное время.</p>
+        <h2>Запишитесь <span>на&nbsp;техосмотр</span></h2>
+        <p>Оставьте заявку на техосмотр, ОСАГО или ремонт — перезвоним и подберём удобное время.</p>
         <ul>
-          <li>Смета до начала работ</li>
-          <li>Старые запчасти отдаём вам</li>
-          <li>Гарантия 2 года на работы</li>
+          <li>Техосмотр от 999 ₽</li>
+          <li>ОСАГО на месте</li>
+          <li>Каждый день с 10:00 до 20:00</li>
         </ul>
         <div class="booking-call">Или позвоните сами:
-          <a href="tel:+79131607592">8-913-160-75-92</a>
+          <a href="tel:+79289229219">+7 (928) 922-92-19</a>
         </div>
       </div>
 
@@ -606,20 +582,8 @@
           </div>
           <div class="field">
             <label for="brand">Марка авто</label>
-            <select id="brand" name="brand">
-              <option value="" selected disabled>Выберите марку</option>
-              <option>Toyota</option>
-              <option>Lexus</option>
-              <option>Nissan</option>
-              <option>Infiniti</option>
-              <option>Honda</option>
-              <option>Mazda</option>
-              <option>Mitsubishi</option>
-              <option>Subaru</option>
-              <option>Suzuki</option>
-              <option>Другая</option>
-            </select>
-            <div class="err">Выберите марку</div>
+            <input id="brand" name="brand" type="text" autocomplete="off" placeholder="Например, Toyota Camry">
+            <div class="err">Укажите марку авто</div>
           </div>
           <input type="hidden" id="service" name="service">
           <button type="submit" class="btn">Записаться</button>
@@ -628,7 +592,7 @@
         <div class="form-success" role="status" aria-live="polite">
           <div class="ok">✓</div>
           <h3 id="successTitle">Заявка принята</h3>
-          <p id="successText">Мастер перезвонит вам в течение 10 минут.</p>
+          <p id="successText">Мы перезвоним вам в ближайшее время.</p>
           <div class="success-actions">
             <a href="https://t.me/oldmiA" class="btn btn-tg js-tg" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.5 13.2 1.8 11.7c-1-.3-1-1 .2-1.5L20.5 3.1c.9-.3 1.6.2 1.4 1.2z"/></svg>
@@ -647,31 +611,31 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="contacts">
-        <a href="#top" class="logo">Гараж<span>66</span></a>
+        <a href="#top" class="logo">Фаворит<span>ТО</span></a>
         <div>
           <h4>Телефон</h4>
-          <a href="tel:+79131607592" class="big">8-913-160-75-92</a>
+          <a href="tel:+79289229219" class="big">+7 (928) 922-92-19</a>
           <a href="https://t.me/oldmiA" class="footer-tg" target="_blank" rel="noopener">Telegram: @oldmiA</a>
         </div>
         <div>
           <h4>Адрес</h4>
-          <p>г. Самара, ул. Партизанская, 66</p>
+          <p>Норильск, район Талнах, микрорайон 4Р,<br>ГСК «Октябрь», 3-й ряд, с65К</p>
+          <a href="https://yandex.ru/maps/org/favorit/169340504724/" class="footer-tg" target="_blank" rel="noopener">Открыть в Яндекс Картах</a>
         </div>
         <div>
           <h4>Часы работы</h4>
           <div class="hours">
-            <span>Пн–Пт</span><span>8:00 – 21:00</span>
-            <span>Сб–Вс</span><span>9:00 – 19:00</span>
+            <span>Пн–Вс</span><span>10:00 – 20:00</span>
           </div>
         </div>
         <a href="#booking" class="btn">Записаться</a>
       </div>
       <div class="map">
-        <iframe src="https://yandex.ru/map-widget/v1/?ll=50.163956%2C53.195026&z=16&pt=50.163956%2C53.195026%2Cpm2orl" title="Гараж 66 на карте Самары" loading="lazy" allowfullscreen></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=88.367929%2C69.492505&z=16&pt=88.367929%2C69.492505%2Cpm2orl" title="«Фаворит» на карте Талнаха" loading="lazy" allowfullscreen></iframe>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Автосервис «Гараж 66». Самара.</span>
+      <span>© 2026 «Фаворит» — пункт техосмотра и автосервис. Норильск, Талнах.</span>
       <a href="#top">Наверх ↑</a>
     </div>
   </div>
@@ -697,7 +661,7 @@
 <script>
   // Клик по номеру или «Позвонить»: копируем номер и показываем сообщение.
   // На телефоне после этого открываем звонилку — звонок всё ещё главная цель.
-  const PHONE = '8-913-160-75-92';
+  const PHONE = '+7 (928) 922-92-19';
   const TG_USER = 'oldmiA';
   const tgLinks = document.querySelectorAll('.js-tg');
   const toast = document.getElementById('toast');
@@ -807,7 +771,7 @@
   const checks = {
     name: v => v.trim().length >= 2,
     phone: v => v.replace(/\D/g, '').length === 11,
-    brand: v => !!v,
+    brand: v => v.trim().length >= 2,
   };
   Object.keys(checks).forEach(id => {
     const el = document.getElementById(id);
@@ -832,7 +796,7 @@
     document.getElementById('modalTitle').textContent = name + ', подтвердите заявку в Telegram';
     const brand = document.getElementById('brand').value;
     const tgText = [
-      'Здравствуйте! Заявка на запись с сайта «Гараж 66»',
+      'Здравствуйте! Заявка на запись с сайта «Фаворит»',
       'Имя: ' + name,
       'Телефон: ' + phone.value,
       'Марка авто: ' + brand,
