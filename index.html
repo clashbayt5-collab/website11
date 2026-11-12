@@ -148,6 +148,8 @@
   }
   .social svg { width: 20px; height: 20px; fill: currentColor; }
   .social--wa, .social--tg, .social--tel { color: var(--accent); }
+  /* Значок телефона только на телефоне: на компьютере номер и так виден в шапке */
+  .socials .social--tel { display: none; }
   .social:hover { border-color: var(--accent); background: var(--accent); color: #111; }
   .social-txt { font: 700 12px/1 "Oswald", sans-serif; letter-spacing: .02em; }
   .burger { display: none; background: none; border: 0; width: 44px; height: 44px; cursor: pointer; position: relative; }
@@ -399,6 +401,7 @@
     .header .wrap { height: 64px; }
     .logo { font-size: 24px; }
     .header-contacts { display: none; }
+    .socials .social--tel { display: grid; }
     .header .wrap { gap: 12px; }
     .social { width: 36px; height: 36px; }
     .social svg { width: 18px; height: 18px; }
