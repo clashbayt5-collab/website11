@@ -663,7 +663,21 @@
             <input id="brand" name="brand" type="text" autocomplete="off" placeholder="Например, Toyota Camry">
             <div class="err">Укажите марку авто</div>
           </div>
-          <input type="hidden" id="service" name="service">
+          <div class="field">
+            <label for="service">Услуга</label>
+            <select id="service" name="service">
+              <option value="" selected disabled>Выберите услугу</option>
+              <option>Техосмотр</option>
+              <option>ОСАГО</option>
+              <option>Ремонт двигателя</option>
+              <option>Ремонт ходовой</option>
+              <option>Компьютерная диагностика</option>
+              <option>Замена масла / шиномонтаж</option>
+              <option>Аренда тёплого бокса</option>
+              <option>Другое</option>
+            </select>
+            <div class="err">Выберите услугу</div>
+          </div>
           <button type="submit" class="btn">Записаться</button>
           <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
         </form>
@@ -823,6 +837,7 @@
   document.querySelectorAll('[data-service]').forEach(btn => {
     btn.addEventListener('click', () => {
       serviceInput.value = btn.dataset.service;
+      serviceInput.closest('.field').classList.remove('invalid');
       formBox.classList.remove('sent');
       form.querySelector('h3').textContent = 'Запись: ' + btn.dataset.service.toLowerCase();
       document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
@@ -854,6 +869,7 @@
     name: v => v.trim().length >= 2,
     phone: v => v.replace(/\D/g, '').length === 11,
     brand: v => v.trim().length >= 2,
+    service: v => !!v,
   };
   Object.keys(checks).forEach(id => {
     const el = document.getElementById(id);
