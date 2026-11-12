@@ -411,7 +411,21 @@
       background: var(--bg); border-bottom: 2px solid var(--accent);
     }
     .nav.open a { padding: 20px 16px; border-top: 1px solid var(--line); font-size: 18px; color: var(--text); }
-    .hero { padding: calc(120px + env(safe-area-inset-top)) 0 64px; }
+    /* На телефоне фото вывески видно целиком наверху, а текст идёт под ним, а не поверх */
+    .hero {
+      --photo-h: calc(64px + env(safe-area-inset-top) + 250px);
+      display: block; min-height: 0;
+      padding: calc(var(--photo-h) - 24px) 0 64px;
+      background-color: var(--bg);
+      background-size: max(100%, calc(var(--photo-h) * 1.5)) auto; /* фото 3:2, всегда на всю ширину */
+      background-position: 42% calc(64px + env(safe-area-inset-top));
+    }
+    .hero::before {
+      background: linear-gradient(180deg,
+        rgba(28,29,31,0) 0,
+        rgba(28,29,31,0) calc(var(--photo-h) - 110px),
+        rgba(28,29,31,1) calc(var(--photo-h) + 40px));
+    }
     .hero-facts { margin-top: 48px; }
     .hero-facts div { padding-right: 0; margin-right: 32px; }
     .btn, .btn-ghost { width: 100%; }
