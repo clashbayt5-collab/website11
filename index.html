@@ -147,7 +147,7 @@
     transition: border-color .2s, background-color .2s, color .2s;
   }
   .social svg { width: 20px; height: 20px; fill: currentColor; }
-  .social--wa { color: var(--accent); }
+  .social--wa, .social--tg { color: var(--accent); }
   .social:hover { border-color: var(--accent); background: var(--accent); color: #111; }
   .social-txt { font: 700 12px/1 "Oswald", sans-serif; letter-spacing: .02em; }
   .burger { display: none; background: none; border: 0; width: 44px; height: 44px; cursor: pointer; position: relative; }
@@ -462,14 +462,17 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.3-.3-.3-.6-.4z"/></svg>
         Написать в WhatsApp
       </a>
+      <a href="https://t.me/OSAGO91" class="nav-tg" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.5 13.2 1.8 11.7c-1-.3-1-1 .2-1.5L20.5 3.1c.9-.3 1.6.2 1.4 1.2z"/></svg>
+        Telegram @OSAGO91
+      </a>
     </nav>
-    <div class="socials" aria-label="Мы в соцсетях и на картах">
+    <div class="socials" aria-label="Мы в мессенджерах">
       <a href="https://wa.me/79134924393" class="social social--wa" target="_blank" rel="noopener" aria-label="Написать в WhatsApp" title="WhatsApp">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.3-.3-.3-.6-.4z"/></svg>
       </a>
-      <a href="https://2gis.ru/norilsk/firm/70000001081318824" class="social" target="_blank" rel="noopener" aria-label="«Фаворит» в 2ГИС" title="2ГИС"><span class="social-txt">2ГИС</span></a>
-      <a href="https://yandex.ru/maps/org/favorit/169340504724/" class="social" target="_blank" rel="noopener" aria-label="«Фаворит» на Яндекс Картах" title="Яндекс Карты">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+      <a href="https://t.me/OSAGO91" class="social social--tg" target="_blank" rel="noopener" aria-label="Telegram «Фаворита»" title="Telegram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.5 13.2 1.8 11.7c-1-.3-1-1 .2-1.5L20.5 3.1c.9-.3 1.6.2 1.4 1.2z"/></svg>
       </a>
     </div>
     <div class="header-contacts">
@@ -722,6 +725,7 @@
           <h4>Телефон</h4>
           <a href="tel:+79289229219" class="big">+7 (928) 922-92-19</a>
           <a href="https://wa.me/79134924393" class="footer-tg" target="_blank" rel="noopener">WhatsApp: +7 (913) 492-43-93</a>
+          <a href="https://t.me/OSAGO91" class="footer-tg" target="_blank" rel="noopener">Telegram: @OSAGO91</a>
           <a href="tel:+79135259914" class="footer-tg footer-tel">Также: +7 (913) 525-99-14</a>
         </div>
         <div>
